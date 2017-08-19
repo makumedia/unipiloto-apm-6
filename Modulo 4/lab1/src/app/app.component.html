@@ -1,0 +1,19 @@
+<h1>{{ title }}</h1>
+<ul>
+  <li *ngFor="let teacher of teacher"
+      (click)="onSelect(teacher)">
+    <span>{{teacher.id}}</span> {{teacher.grades}}
+  </li>
+</ul>
+
+<div *ngIf="selected">
+  <hr />
+  <label>Profession: </label><br />
+  <input [(ngModel)]="selected.profession" placeholder="profession"><br />
+  <label>Grado: </label><br />
+  <textarea [(ngModel)]="selected.grades" placeholder="grades"></textarea><br />
+  <label>Type: </label><br />
+  <input [(ngModel)]="selected.group" placeholder="group"><br />
+  
+  
+</div>
