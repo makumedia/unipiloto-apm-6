@@ -1,4 +1,4 @@
-<h1>CUP 1/4 MILLE</h1>
+<h1>{{ title }}</h1>
 <ul>
   <li *ngFor="let vehicle of vehicle"
       (click)="onSelect(vehicle)">
@@ -10,6 +10,7 @@
   <hr />
   <label>Brand:</label><br />
   <input [(ngModel)]="selected.brand" placeholder="brand"><br />
+  
   <label>Model: </label><br />
   <textarea [(ngModel)]="selected.model" placeholder="model"></textarea><br />
   <label>color: </label><br />
