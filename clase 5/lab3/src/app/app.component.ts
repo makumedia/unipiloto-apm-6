@@ -4,27 +4,27 @@ import {Student} from '../models/student';
 const STUDENT: Student[] = [
   {
     id: 1,
-    name: "Samsung galaxy 8",
-    description: "telefono que explota",
-    type: "smartphone",
-    price: 1500000,
-    quantity: 20
+    name: "Alex",
+    grade: 5,
+    group: "B",
+    teacher: "Claudia"
+    
   },
   {
-    id: 2,
-    name: "Samsung galaxy 10",
-    description: "telefono que explota",
-    type: "smartphone",
-    price: 1500000,
-    quantity: 20
+   id: 2,
+    name: "Paola",
+    grade: 4,
+    group: "A",
+    teacher: "Beto"
+    
   },
   {
-    id: 3,
-    name: "Samsung galaxy 20",
-    description: "telefono que explota",
-    type: "smartphone",
-    price: 1500000,
-    quantity: 20
+     id: 3,
+    name: "jonathan",
+    grade: 3,
+    group: "C",
+    teacher: "Carlos"
+    
   }
 ];
 
@@ -34,11 +34,11 @@ const STUDENT: Student[] = [
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: string = "los productos del Año";
+  title: string = "estudent and teachers";
 
   selected: Student;
 
-  student: Student[] = PRODUCTS;
+  student: Student[] = STUDENT;
 
   onSelect(student: Student){
     this.selected = student;

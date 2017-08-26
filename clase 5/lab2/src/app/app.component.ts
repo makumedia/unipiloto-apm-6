@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
-import {Product} from '../models/product';
 
-const PRODUCTS: Product[] = [
+import {Vehicle} from '../models/vehicle';
+
+const VEHICLE: Vehicle[] = [
   {
     id: 1,
     name: "Samsung galaxy 8",

@@ -1,0 +1,13 @@
+<div *ngIf="product">
+  <hr />
+  <label>Id: </label><br />
+  <input [(ngModel)]="product.name" placeholder="name"><br />
+  <label>Name: </label><br />
+  <textarea [(ngModel)]="product.description" placeholder="description"></textarea><br />
+  <label>Grade: </label><br />
+  <input [(ngModel)]="product.type" placeholder="tipo"><br />
+  <label>Group: </label><br />
+  <input [(ngModel)]="product.price" placeholder="precio"><br />
+  <label>: </label><br />
+  <input [(ngModel)]="product.quantity" placeholder="cantidad"><br />
+</div>

@@ -1,7 +1,8 @@
 <h1>{{ title }}</h1>
 <ul>
   <li *ngFor="let student of student"
-        (click)="onSelect(student)">
+      [class.pepito]="student === selected"
+      (click)="onSelect(student)">
     <span>{{student.id}}</span> {{student.name}}
   </li>
 </ul>
